@@ -1,0 +1,2741 @@
+{
+  "standard": "Token Metrology Standard",
+  "standard_version": "1.0",
+  "corpus": {
+    "name": "Token Metrology Standard Corpus",
+    "version": "1.0"
+  },
+  "n_tokenizers": 13,
+  "tokenizers": {
+    "GPT-2": {
+      "tokenizer": {
+        "type": "tiktoken",
+        "name": "gpt2",
+        "vocabulary_size": 50257,
+        "conditions": {
+          "normalization": "none (raw bytes)",
+          "special_tokens": "excluded"
+        },
+        "label": "GPT-2"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 33,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.1941,
+          "token_per_char": 0.1941
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 82,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.656,
+          "token_per_char": 1.907
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 117,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.4588,
+          "token_per_char": 1.3765
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 197,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.8995,
+          "token_per_char": 2.2644
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 61,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.3194,
+          "token_per_char": 0.328
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 60,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.3614,
+          "token_per_char": 0.3659
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 58,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.3353,
+          "token_per_char": 0.3392
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 172,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.587,
+          "token_per_char": 1.075
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 121,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.5681,
+          "token_per_char": 1.0431
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 290,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.5906,
+          "token_per_char": 1.5676
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 177,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.7024,
+          "token_per_char": 0.9568
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 260,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.6684,
+          "token_per_char": 1.9847
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 38,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.1792,
+          "token_per_char": 0.1792
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 113,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.689,
+          "token_per_char": 2.0179
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 80,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.4396,
+          "token_per_char": 0.4396
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 53,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.363,
+          "token_per_char": 0.3732
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 73,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6348,
+          "token_per_char": 0.8111
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 57,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.5588,
+          "token_per_char": 1.2391
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 2.485,
+          "Japanese": 3.545,
+          "Korean": 5.97,
+          "French": 1.848,
+          "German": 1.818,
+          "Spanish": 1.758,
+          "Russian": 5.212,
+          "Arabic": 3.667,
+          "Hindi": 8.788,
+          "Vietnamese": 5.364,
+          "Thai": 7.879
+        }
+      }
+    },
+    "GPT-3.5/4": {
+      "tokenizer": {
+        "type": "tiktoken",
+        "name": "cl100k_base",
+        "vocabulary_size": 100277,
+        "conditions": {
+          "normalization": "none (raw bytes)",
+          "special_tokens": "excluded"
+        },
+        "label": "GPT-3.5/4"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 33,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.1941,
+          "token_per_char": 0.1941
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 52,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.416,
+          "token_per_char": 1.2093
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 93,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.3647,
+          "token_per_char": 1.0941
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 85,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.3881,
+          "token_per_char": 0.977
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 50,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.2618,
+          "token_per_char": 0.2688
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 44,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.2651,
+          "token_per_char": 0.2683
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 44,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.2543,
+          "token_per_char": 0.2573
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 74,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.2526,
+          "token_per_char": 0.4625
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 88,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.4131,
+          "token_per_char": 0.7586
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 178,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.3625,
+          "token_per_char": 0.9622
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 83,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.3294,
+          "token_per_char": 0.4486
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 135,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.347,
+          "token_per_char": 1.0305
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 38,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.1792,
+          "token_per_char": 0.1792
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 61,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.372,
+          "token_per_char": 1.0893
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 53,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.2912,
+          "token_per_char": 0.2912
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 33,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.226,
+          "token_per_char": 0.2324
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 73,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6348,
+          "token_per_char": 0.8111
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 44,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.4314,
+          "token_per_char": 0.9565
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 1.576,
+          "Japanese": 2.818,
+          "Korean": 2.576,
+          "French": 1.515,
+          "German": 1.333,
+          "Spanish": 1.333,
+          "Russian": 2.242,
+          "Arabic": 2.667,
+          "Hindi": 5.394,
+          "Vietnamese": 2.515,
+          "Thai": 4.091
+        }
+      }
+    },
+    "GPT-4o": {
+      "tokenizer": {
+        "type": "tiktoken",
+        "name": "o200k_base",
+        "vocabulary_size": 200019,
+        "conditions": {
+          "normalization": "none (raw bytes)",
+          "special_tokens": "excluded"
+        },
+        "label": "GPT-4o"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 33,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.1941,
+          "token_per_char": 0.1941
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 37,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.296,
+          "token_per_char": 0.8605
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 72,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.2824,
+          "token_per_char": 0.8471
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 51,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.2329,
+          "token_per_char": 0.5862
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 41,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.2147,
+          "token_per_char": 0.2204
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 38,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.2289,
+          "token_per_char": 0.2317
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 38,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.2197,
+          "token_per_char": 0.2222
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 41,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.1399,
+          "token_per_char": 0.2562
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 43,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.2019,
+          "token_per_char": 0.3707
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 53,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.1079,
+          "token_per_char": 0.2865
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 50,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.1984,
+          "token_per_char": 0.2703
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 63,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.162,
+          "token_per_char": 0.4809
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 38,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.1792,
+          "token_per_char": 0.1792
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 44,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.2683,
+          "token_per_char": 0.7857
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 54,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.2967,
+          "token_per_char": 0.2967
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 32,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.2192,
+          "token_per_char": 0.2254
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 71,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6174,
+          "token_per_char": 0.7889
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 40,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.3922,
+          "token_per_char": 0.8696
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 1.121,
+          "Japanese": 2.182,
+          "Korean": 1.545,
+          "French": 1.242,
+          "German": 1.152,
+          "Spanish": 1.152,
+          "Russian": 1.242,
+          "Arabic": 1.303,
+          "Hindi": 1.606,
+          "Vietnamese": 1.515,
+          "Thai": 1.909
+        }
+      }
+    },
+    "LLaMA-2": {
+      "tokenizer": {
+        "type": "tokenizers-json",
+        "path": "..\\tokfiles\\llama2.json",
+        "vocabulary_size": 32000,
+        "conditions": {
+          "normalization": "as defined in tokenizer.json",
+          "special_tokens": "excluded"
+        },
+        "label": "LLaMA-2"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 37,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.2176,
+          "token_per_char": 0.2176
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 63,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.504,
+          "token_per_char": 1.4651
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 101,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.3961,
+          "token_per_char": 1.1882
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 139,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.6347,
+          "token_per_char": 1.5977
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 53,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.2775,
+          "token_per_char": 0.2849
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 44,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.2651,
+          "token_per_char": 0.2683
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 48,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.2775,
+          "token_per_char": 0.2807
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 58,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.198,
+          "token_per_char": 0.3625
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 111,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.5211,
+          "token_per_char": 0.9569
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 205,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.4175,
+          "token_per_char": 1.1081
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 130,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.5159,
+          "token_per_char": 0.7027
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 139,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.3573,
+          "token_per_char": 1.0611
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 40,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.1887,
+          "token_per_char": 0.1887
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 76,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.4634,
+          "token_per_char": 1.3571
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 73,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.4011,
+          "token_per_char": 0.4011
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 48,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.3288,
+          "token_per_char": 0.338
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 75,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6522,
+          "token_per_char": 0.8333
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 66,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.6471,
+          "token_per_char": 1.4348
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 1.703,
+          "Japanese": 2.73,
+          "Korean": 3.757,
+          "French": 1.432,
+          "German": 1.189,
+          "Spanish": 1.297,
+          "Russian": 1.568,
+          "Arabic": 3.0,
+          "Hindi": 5.541,
+          "Vietnamese": 3.514,
+          "Thai": 3.757
+        }
+      }
+    },
+    "LLaMA-3": {
+      "tokenizer": {
+        "type": "tokenizers-json",
+        "path": "..\\tokfiles\\LLaMA_3.json",
+        "vocabulary_size": 128256,
+        "conditions": {
+          "normalization": "as defined in tokenizer.json",
+          "special_tokens": "excluded"
+        },
+        "label": "LLaMA-3"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 34,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.2,
+          "token_per_char": 0.2
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 39,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.312,
+          "token_per_char": 0.907
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 59,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.2314,
+          "token_per_char": 0.6941
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 53,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.242,
+          "token_per_char": 0.6092
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 51,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.267,
+          "token_per_char": 0.2742
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 45,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.2711,
+          "token_per_char": 0.2744
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 45,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.2601,
+          "token_per_char": 0.2632
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 49,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.1672,
+          "token_per_char": 0.3063
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 50,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.2347,
+          "token_per_char": 0.431
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 93,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.1894,
+          "token_per_char": 0.5027
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 49,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.1944,
+          "token_per_char": 0.2649
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 62,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.1594,
+          "token_per_char": 0.4733
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 39,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.184,
+          "token_per_char": 0.184
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 50,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.3049,
+          "token_per_char": 0.8929
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 54,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.2967,
+          "token_per_char": 0.2967
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 33,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.226,
+          "token_per_char": 0.2324
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 74,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6435,
+          "token_per_char": 0.8222
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 42,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.4118,
+          "token_per_char": 0.913
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 1.147,
+          "Japanese": 1.735,
+          "Korean": 1.559,
+          "French": 1.5,
+          "German": 1.324,
+          "Spanish": 1.324,
+          "Russian": 1.441,
+          "Arabic": 1.471,
+          "Hindi": 2.735,
+          "Vietnamese": 1.441,
+          "Thai": 1.824
+        }
+      }
+    },
+    "Mistral-7B": {
+      "tokenizer": {
+        "type": "tokenizers-json",
+        "path": "..\\tokfiles\\mistral.json",
+        "vocabulary_size": 32000,
+        "conditions": {
+          "normalization": "as defined in tokenizer.json",
+          "special_tokens": "excluded"
+        },
+        "label": "Mistral-7B"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 35,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.2059,
+          "token_per_char": 0.2059
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 45,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.36,
+          "token_per_char": 1.0465
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 93,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.3647,
+          "token_per_char": 1.0941
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 91,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.4155,
+          "token_per_char": 1.046
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 55,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.288,
+          "token_per_char": 0.2957
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 50,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.3012,
+          "token_per_char": 0.3049
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 52,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.3006,
+          "token_per_char": 0.3041
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 62,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.2116,
+          "token_per_char": 0.3875
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 110,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.5164,
+          "token_per_char": 0.9483
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 197,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.4012,
+          "token_per_char": 1.0649
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 124,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.4921,
+          "token_per_char": 0.6703
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 135,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.347,
+          "token_per_char": 1.0305
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 42,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.1981,
+          "token_per_char": 0.1981
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 58,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.3537,
+          "token_per_char": 1.0357
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 73,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.4011,
+          "token_per_char": 0.4011
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 48,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.3288,
+          "token_per_char": 0.338
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 82,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.713,
+          "token_per_char": 0.9111
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 52,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.5098,
+          "token_per_char": 1.1304
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 1.286,
+          "Japanese": 2.657,
+          "Korean": 2.6,
+          "French": 1.571,
+          "German": 1.429,
+          "Spanish": 1.486,
+          "Russian": 1.771,
+          "Arabic": 3.143,
+          "Hindi": 5.629,
+          "Vietnamese": 3.543,
+          "Thai": 3.857
+        }
+      }
+    },
+    "Phi-3": {
+      "tokenizer": {
+        "type": "tokenizers-json",
+        "path": "..\\tokfiles\\phi3.json",
+        "vocabulary_size": 32011,
+        "conditions": {
+          "normalization": "as defined in tokenizer.json",
+          "special_tokens": "excluded"
+        },
+        "label": "Phi-3"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 36,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.2118,
+          "token_per_char": 0.2118
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 62,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.496,
+          "token_per_char": 1.4419
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 100,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.3922,
+          "token_per_char": 1.1765
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 138,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.6301,
+          "token_per_char": 1.5862
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 52,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.2723,
+          "token_per_char": 0.2796
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 43,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.259,
+          "token_per_char": 0.2622
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 47,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.2717,
+          "token_per_char": 0.2749
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 57,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.1945,
+          "token_per_char": 0.3563
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 110,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.5164,
+          "token_per_char": 0.9483
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 204,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.4155,
+          "token_per_char": 1.1027
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 129,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.5119,
+          "token_per_char": 0.6973
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 138,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.3548,
+          "token_per_char": 1.0534
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 39,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.184,
+          "token_per_char": 0.184
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 75,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.4573,
+          "token_per_char": 1.3393
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 72,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.3956,
+          "token_per_char": 0.3956
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 47,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.3219,
+          "token_per_char": 0.331
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 74,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6435,
+          "token_per_char": 0.8222
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 65,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.6373,
+          "token_per_char": 1.413
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 1.722,
+          "Japanese": 2.778,
+          "Korean": 3.833,
+          "French": 1.444,
+          "German": 1.194,
+          "Spanish": 1.306,
+          "Russian": 1.583,
+          "Arabic": 3.056,
+          "Hindi": 5.667,
+          "Vietnamese": 3.583,
+          "Thai": 3.833
+        }
+      }
+    },
+    "Qwen2.5": {
+      "tokenizer": {
+        "type": "tokenizers-json",
+        "path": "..\\tokfiles\\Qwen2.5.json",
+        "vocabulary_size": 151665,
+        "conditions": {
+          "normalization": "as defined in tokenizer.json",
+          "special_tokens": "excluded"
+        },
+        "label": "Qwen2.5"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 33,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.1941,
+          "token_per_char": 0.1941
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 29,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.232,
+          "token_per_char": 0.6744
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 52,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.2039,
+          "token_per_char": 0.6118
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 55,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.2511,
+          "token_per_char": 0.6322
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 50,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.2618,
+          "token_per_char": 0.2688
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 44,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.2651,
+          "token_per_char": 0.2683
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 43,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.2486,
+          "token_per_char": 0.2515
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 49,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.1672,
+          "token_per_char": 0.3063
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 50,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.2347,
+          "token_per_char": 0.431
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 169,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.3442,
+          "token_per_char": 0.9135
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 49,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.1944,
+          "token_per_char": 0.2649
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 79,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.2031,
+          "token_per_char": 0.6031
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 38,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.1792,
+          "token_per_char": 0.1792
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 38,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.2317,
+          "token_per_char": 0.6786
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 53,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.2912,
+          "token_per_char": 0.2912
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 32,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.2192,
+          "token_per_char": 0.2254
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 70,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6087,
+          "token_per_char": 0.7778
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 39,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.3824,
+          "token_per_char": 0.8478
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 0.879,
+          "Japanese": 1.576,
+          "Korean": 1.667,
+          "French": 1.515,
+          "German": 1.333,
+          "Spanish": 1.303,
+          "Russian": 1.485,
+          "Arabic": 1.515,
+          "Hindi": 5.121,
+          "Vietnamese": 1.485,
+          "Thai": 2.394
+        }
+      }
+    },
+    "DeepSeek-V3": {
+      "tokenizer": {
+        "type": "tokenizers-json",
+        "path": "..\\tokfiles\\DeepSeek_V3.json",
+        "vocabulary_size": 128815,
+        "conditions": {
+          "normalization": "as defined in tokenizer.json",
+          "special_tokens": "excluded"
+        },
+        "label": "DeepSeek-V3"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 33,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.1941,
+          "token_per_char": 0.1941
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 27,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.216,
+          "token_per_char": 0.6279
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 51,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.2,
+          "token_per_char": 0.6
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 57,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.2603,
+          "token_per_char": 0.6552
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 50,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.2618,
+          "token_per_char": 0.2688
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 43,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.259,
+          "token_per_char": 0.2622
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 40,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.2312,
+          "token_per_char": 0.2339
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 46,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.157,
+          "token_per_char": 0.2875
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 45,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.2113,
+          "token_per_char": 0.3879
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 92,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.1874,
+          "token_per_char": 0.4973
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 74,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.2937,
+          "token_per_char": 0.4
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 52,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.1337,
+          "token_per_char": 0.3969
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 38,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.1792,
+          "token_per_char": 0.1792
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 33,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.2012,
+          "token_per_char": 0.5893
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 59,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.3242,
+          "token_per_char": 0.3242
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 37,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.2534,
+          "token_per_char": 0.2606
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 65,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.5652,
+          "token_per_char": 0.7222
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 38,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.3725,
+          "token_per_char": 0.8261
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 0.818,
+          "Japanese": 1.545,
+          "Korean": 1.727,
+          "French": 1.515,
+          "German": 1.303,
+          "Spanish": 1.212,
+          "Russian": 1.394,
+          "Arabic": 1.364,
+          "Hindi": 2.788,
+          "Vietnamese": 2.242,
+          "Thai": 1.576
+        }
+      }
+    },
+    "Yi-6B": {
+      "tokenizer": {
+        "type": "tokenizers-json",
+        "path": "..\\tokfiles\\yi6b.json",
+        "vocabulary_size": 63992,
+        "conditions": {
+          "normalization": "as defined in tokenizer.json",
+          "special_tokens": "excluded"
+        },
+        "label": "Yi-6B"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 33,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.1941,
+          "token_per_char": 0.1941
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 28,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.224,
+          "token_per_char": 0.6512
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 95,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.3725,
+          "token_per_char": 1.1176
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 177,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.8082,
+          "token_per_char": 2.0345
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 62,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.3246,
+          "token_per_char": 0.3333
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 60,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.3614,
+          "token_per_char": 0.3659
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 58,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.3353,
+          "token_per_char": 0.3392
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 74,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.2526,
+          "token_per_char": 0.4625
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 139,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.6526,
+          "token_per_char": 1.1983
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 401,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.8167,
+          "token_per_char": 2.1676
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 180,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.7143,
+          "token_per_char": 0.973
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 347,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.892,
+          "token_per_char": 2.6489
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 38,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.1792,
+          "token_per_char": 0.1792
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 36,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.2195,
+          "token_per_char": 0.6429
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 73,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.4011,
+          "token_per_char": 0.4011
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 46,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.3151,
+          "token_per_char": 0.3239
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 87,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.7565,
+          "token_per_char": 0.9667
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 66,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.6471,
+          "token_per_char": 1.4348
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 0.848,
+          "Japanese": 2.879,
+          "Korean": 5.364,
+          "French": 1.879,
+          "German": 1.818,
+          "Spanish": 1.758,
+          "Russian": 2.242,
+          "Arabic": 4.212,
+          "Hindi": 12.152,
+          "Vietnamese": 5.455,
+          "Thai": 10.515
+        }
+      }
+    },
+    "Baichuan2": {
+      "tokenizer": {
+        "type": "sentencepiece-reconstructed",
+        "path": "..\\tokfiles\\baichuan2.model",
+        "vocabulary_size": 125696,
+        "conditions": {
+          "normalization": "NFKC",
+          "pre_tokenizer": "Metaspace(▁)"
+        },
+        "label": "Baichuan2"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 78,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.4588,
+          "token_per_char": 0.4588
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 27,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.216,
+          "token_per_char": 0.6279
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 77,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.302,
+          "token_per_char": 0.9059
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 88,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.4018,
+          "token_per_char": 1.0115
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 88,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.4607,
+          "token_per_char": 0.4731
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 77,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.4639,
+          "token_per_char": 0.4695
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 79,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.4566,
+          "token_per_char": 0.462
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 87,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.2969,
+          "token_per_char": 0.5437
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 107,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.5023,
+          "token_per_char": 0.9224
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 181,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.3686,
+          "token_per_char": 0.9784
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 127,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.504,
+          "token_per_char": 0.6865
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 132,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.3393,
+          "token_per_char": 1.0076
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 96,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.4528,
+          "token_per_char": 0.4528
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 37,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.2256,
+          "token_per_char": 0.6607
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 106,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.5824,
+          "token_per_char": 0.5824
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 82,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.5616,
+          "token_per_char": 0.5775
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 76,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6609,
+          "token_per_char": 0.8444
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 41,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.402,
+          "token_per_char": 0.8913
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 0.346,
+          "Japanese": 0.987,
+          "Korean": 1.128,
+          "French": 1.128,
+          "German": 0.987,
+          "Spanish": 1.013,
+          "Russian": 1.115,
+          "Arabic": 1.372,
+          "Hindi": 2.321,
+          "Vietnamese": 1.628,
+          "Thai": 1.692
+        }
+      }
+    },
+    "GLM-4": {
+      "tokenizer": {
+        "type": "tiktoken-style (glm4)",
+        "path": "..\\tokfiles\\glm4.model",
+        "vocabulary_size": 151329,
+        "conditions": {
+          "pat_str": "GPT-4 pattern",
+          "special_tokens": "excluded"
+        },
+        "label": "GLM-4"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 33,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.1941,
+          "token_per_char": 0.1941
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 28,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.224,
+          "token_per_char": 0.6512
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 58,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.2275,
+          "token_per_char": 0.6824
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 70,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.3196,
+          "token_per_char": 0.8046
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 49,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.2565,
+          "token_per_char": 0.2634
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 44,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.2651,
+          "token_per_char": 0.2683
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 39,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.2254,
+          "token_per_char": 0.2281
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 41,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.1399,
+          "token_per_char": 0.2562
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 51,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.2394,
+          "token_per_char": 0.4397
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 178,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.3625,
+          "token_per_char": 0.9622
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 50,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.1984,
+          "token_per_char": 0.2703
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 135,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.347,
+          "token_per_char": 1.0305
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 38,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.1792,
+          "token_per_char": 0.1792
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 35,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.2134,
+          "token_per_char": 0.625
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 53,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.2912,
+          "token_per_char": 0.2912
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 32,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.2192,
+          "token_per_char": 0.2254
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 72,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6261,
+          "token_per_char": 0.8
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 41,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.402,
+          "token_per_char": 0.8913
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 0.848,
+          "Japanese": 1.758,
+          "Korean": 2.121,
+          "French": 1.485,
+          "German": 1.333,
+          "Spanish": 1.182,
+          "Russian": 1.242,
+          "Arabic": 1.545,
+          "Hindi": 5.394,
+          "Vietnamese": 1.515,
+          "Thai": 4.091
+        }
+      }
+    },
+    "InternLM2": {
+      "tokenizer": {
+        "type": "sentencepiece-reconstructed",
+        "path": "..\\tokfiles\\internlm2.model",
+        "vocabulary_size": 92544,
+        "conditions": {
+          "normalization": "NFKC",
+          "pre_tokenizer": "Metaspace(▁)"
+        },
+        "label": "InternLM2"
+      },
+      "measurements": [
+        {
+          "id": "en",
+          "language": "English",
+          "domain": "legal prose",
+          "tokens": 79,
+          "bytes": 170,
+          "chars": 170,
+          "token_per_byte": 0.4647,
+          "token_per_char": 0.4647
+        },
+        {
+          "id": "zh",
+          "language": "Chinese",
+          "domain": "legal prose",
+          "tokens": 30,
+          "bytes": 125,
+          "chars": 43,
+          "token_per_byte": 0.24,
+          "token_per_char": 0.6977
+        },
+        {
+          "id": "ja",
+          "language": "Japanese",
+          "domain": "legal prose",
+          "tokens": 79,
+          "bytes": 255,
+          "chars": 85,
+          "token_per_byte": 0.3098,
+          "token_per_char": 0.9294
+        },
+        {
+          "id": "ko",
+          "language": "Korean",
+          "domain": "legal prose",
+          "tokens": 88,
+          "bytes": 219,
+          "chars": 87,
+          "token_per_byte": 0.4018,
+          "token_per_char": 1.0115
+        },
+        {
+          "id": "fr",
+          "language": "French",
+          "domain": "legal prose",
+          "tokens": 91,
+          "bytes": 191,
+          "chars": 186,
+          "token_per_byte": 0.4764,
+          "token_per_char": 0.4892
+        },
+        {
+          "id": "de",
+          "language": "German",
+          "domain": "legal prose",
+          "tokens": 77,
+          "bytes": 166,
+          "chars": 164,
+          "token_per_byte": 0.4639,
+          "token_per_char": 0.4695
+        },
+        {
+          "id": "es",
+          "language": "Spanish",
+          "domain": "legal prose",
+          "tokens": 82,
+          "bytes": 173,
+          "chars": 171,
+          "token_per_byte": 0.474,
+          "token_per_char": 0.4795
+        },
+        {
+          "id": "ru",
+          "language": "Russian",
+          "domain": "legal prose",
+          "tokens": 161,
+          "bytes": 293,
+          "chars": 160,
+          "token_per_byte": 0.5495,
+          "token_per_char": 1.0063
+        },
+        {
+          "id": "ar",
+          "language": "Arabic",
+          "domain": "legal prose",
+          "tokens": 117,
+          "bytes": 213,
+          "chars": 116,
+          "token_per_byte": 0.5493,
+          "token_per_char": 1.0086
+        },
+        {
+          "id": "hi",
+          "language": "Hindi",
+          "domain": "legal prose",
+          "tokens": 186,
+          "bytes": 491,
+          "chars": 185,
+          "token_per_byte": 0.3788,
+          "token_per_char": 1.0054
+        },
+        {
+          "id": "vi",
+          "language": "Vietnamese",
+          "domain": "legal prose",
+          "tokens": 124,
+          "bytes": 252,
+          "chars": 185,
+          "token_per_byte": 0.4921,
+          "token_per_char": 0.6703
+        },
+        {
+          "id": "th",
+          "language": "Thai",
+          "domain": "legal prose",
+          "tokens": 132,
+          "bytes": 389,
+          "chars": 131,
+          "token_per_byte": 0.3393,
+          "token_per_char": 1.0076
+        },
+        {
+          "id": "tech_en",
+          "language": "English",
+          "domain": "technical",
+          "tokens": 92,
+          "bytes": 212,
+          "chars": 212,
+          "token_per_byte": 0.434,
+          "token_per_char": 0.434
+        },
+        {
+          "id": "tech_zh",
+          "language": "Chinese",
+          "domain": "technical",
+          "tokens": 38,
+          "bytes": 164,
+          "chars": 56,
+          "token_per_byte": 0.2317,
+          "token_per_char": 0.6786
+        },
+        {
+          "id": "code_py",
+          "language": "Python",
+          "domain": "code",
+          "tokens": 95,
+          "bytes": 182,
+          "chars": 182,
+          "token_per_byte": 0.522,
+          "token_per_char": 0.522
+        },
+        {
+          "id": "code_js",
+          "language": "JavaScript",
+          "domain": "code",
+          "tokens": 69,
+          "bytes": 146,
+          "chars": 142,
+          "token_per_byte": 0.4726,
+          "token_per_char": 0.4859
+        },
+        {
+          "id": "math",
+          "language": "Mathematics",
+          "domain": "mathematics",
+          "tokens": 74,
+          "bytes": 115,
+          "chars": 90,
+          "token_per_byte": 0.6435,
+          "token_per_char": 0.8222
+        },
+        {
+          "id": "symbol",
+          "language": "Symbols",
+          "domain": "symbols",
+          "tokens": 44,
+          "bytes": 102,
+          "chars": 46,
+          "token_per_byte": 0.4314,
+          "token_per_char": 0.9565
+        }
+      ],
+      "aggregates": {
+        "token_inflation_factor": {
+          "English": 1.0,
+          "Chinese": 0.38,
+          "Japanese": 1.0,
+          "Korean": 1.114,
+          "French": 1.152,
+          "German": 0.975,
+          "Spanish": 1.038,
+          "Russian": 2.038,
+          "Arabic": 1.481,
+          "Hindi": 2.354,
+          "Vietnamese": 1.57,
+          "Thai": 1.671
+        }
+      }
+    }
+  }
+}
