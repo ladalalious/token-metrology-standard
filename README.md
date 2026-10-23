@@ -29,6 +29,8 @@ token count to state its tokenizer identity and measurement conditions.
 | `benchmark_results.csv` | Raw benchmark data: 13 tokenizers × 18 corpus sections (234 rows), with token/byte/char counts and per-byte/per-char densities. |
 | `benchmark_summary.csv` | Per-section summary statistics (min/max/mean/std/CV across tokenizers). |
 | `benchmark_tax.csv` | Token inflation factor per language relative to English (parallel UDHR text). |
+| `tms_flores_sample_v1.json` | **Replication corpus** — 50 sentences × 20 languages from the FLORES-101 dev set (CC-BY-SA 4.0), used in the paper's multi-sentence robustness check. |
+| `flores_tax.json` | Token inflation factors on the FLORES-101 sample (mean / min / max over 13 tokenizers). |
 | `LICENSE` | MIT (code). Corpus data terms are stated in `tms_corpus_v1.json`. |
 
 ## Quick start
