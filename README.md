@@ -23,7 +23,7 @@ token count to state its tokenizer identity and measurement conditions.
 |---|---|
 | `tms_spec.md` | The TMS v1.0 specification: purpose, core principle, corpus, protocol, report format, conformance criteria. |
 | `tms_corpus_v1.json` | **TMS-Corpus v1.0** — the versioned reference corpus: Article 1 of the UDHR in 12 languages, plus technical, code, mathematical, and symbolic samples (18 sections). |
-| `tms.py` | The **reference implementation**. Loads tiktoken / tokenizers-JSON / SentencePiece / GLM-4 tokenizers and emits a TMS-conformant report. |
+| `tms.py` | The **reference implementation**. Loads tiktoken encodings, tokenizers-JSON files, official SentencePiece models, and GLM-4's tokenizer format, and emits a TMS-conformant report. |
 | `run_all.py` | Reproduction script that runs the 13-tokenizer calibration (see "Reproduction" below). |
 | `tms_results_13tokenizers.json` | **Calibration data** — TMS reports for 13 widely used tokenizers. |
 | `benchmark_results.csv` | Raw benchmark data: 13 tokenizers × 18 corpus sections (234 rows), with token/byte/char counts and per-byte/per-char densities. |
@@ -35,7 +35,7 @@ token count to state its tokenizer identity and measurement conditions.
 
 ```bash
 # install dependencies
-pip install tiktoken tokenizers
+pip install tiktoken tokenizers sentencepiece
 
 # produce a TMS report for a single tokenizer
 python tms.py --type tiktoken --name o200k_base \
@@ -57,7 +57,10 @@ reported in the paper. To regenerate them end-to-end:
 1. Obtain the tokenizer vocabulary/model files for the 13 tokenizers from their
    official releases (tiktoken encodings are bundled with `tiktoken`; the others are
    the public `tokenizer.json` / SentencePiece models of LLaMA-2/3, Mistral-7B, Phi-3,
-   Qwen2.5, DeepSeek-V3, Yi-6B, Baichuan2, GLM-4, InternLM2).
+   Qwen2.5, DeepSeek-V3, Yi-6B, Baichuan2, GLM-4, InternLM2). Baichuan2 and InternLM2
+   are loaded through the official `sentencepiece` package (the one InternLM2 piece
+   containing a NUL byte is substituted in memory), and GLM-4 through its official
+   tokenizer class.
 2. Point the `SPECS` paths in `run_all.py` at those files and run:
    ```bash
    python run_all.py

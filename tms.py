@@ -16,6 +16,7 @@ Usage:
 """
 import json, struct, base64, argparse, statistics
 import tiktoken
+from sentencepiece import SentencePieceProcessor, sentencepiece_model_pb2
 from tokenizers import Tokenizer
 from tokenizers.models import BPE
 from tokenizers.pre_tokenizers import Metaspace
@@ -82,17 +83,25 @@ def _parse_sp_model(data):
     return pieces
 
 
-def build_sp_tokenizer(path):
-    pieces = _parse_sp_model(open(path, "rb").read())
-    vocab = {p: i for i, (p, s, t) in enumerate(pieces)}
-    normal = [(p, s) for (p, s, t) in pieces if t in (0, 1) and len(p) > 1]
-    normal.sort(key=lambda x: -x[1])
-    merges = [(p[:-1], p[-1]) for (p, s) in normal]
-    merges = [(a, b) for (a, b) in merges if a in vocab and b in vocab]
-    tok = Tokenizer(BPE(vocab, merges, unk_token="<unk>"))
-    tok.pre_tokenizer = Metaspace(replacement="\u2581", prepend_scheme="always")
-    tok.normalizer = NFKC()
-    return tok
+def load_sp_official(path):
+    """Load a SentencePiece model with the official library.
+
+    Some released models (e.g. InternLM2) contain a piece holding a literal NUL
+    byte, which the official loader rejects.  We replace that one piece's text
+    with a unique placeholder in memory; because a NUL byte never occurs in the
+    corpus's normal text, this does not affect tokenization of ordinary text.
+    """
+    raw = open(path, "rb").read()
+    mp = sentencepiece_model_pb2.ModelProto()
+    mp.ParseFromString(raw)
+    existing = {p.piece for p in mp.pieces}
+    for p in mp.pieces:
+        if "\x00" in p.piece:
+            ph = "<NUL_PATCH>"
+            while ph in existing:
+                ph += "_"
+            p.piece = ph
+    return SentencePieceProcessor(model_proto=mp.SerializeToString())
 
 
 # ============ GLM-4 tiktoken-style loader ============
@@ -128,10 +137,12 @@ def load_tokenizer(args):
                                "special_tokens": "excluded"}}
         return tok, meta
     if t == "sentencepiece":
-        tok = build_sp_tokenizer(args.path)
-        meta = {"type": "sentencepiece-reconstructed", "path": args.path,
-                "vocabulary_size": tok.get_vocab_size(),
-                "conditions": {"normalization": "NFKC", "pre_tokenizer": "Metaspace(\u2581)"}}
+        tok = load_sp_official(args.path)
+        meta = {"type": "sentencepiece-official", "path": args.path,
+                "vocabulary_size": tok.get_piece_size(),
+                "conditions": {"normalization": "as defined in the model",
+                               "pre_tokenizer": "as defined in the model",
+                               "special_tokens": "excluded"}}
         return tok, meta
     if t == "glm4":
         tok = load_glm4(args.path)
@@ -147,6 +158,8 @@ def count(tok, text):
     nb, nc = len(text.encode("utf-8")), len(text)
     if isinstance(tok, tiktoken.Encoding):
         nt = len(tok.encode(text))
+    elif isinstance(tok, SentencePieceProcessor):
+        nt = len(tok.encode(text, out_type=int))
     else:
         nt = len(tok.encode(text).ids)
     return nt, nb, nc
