@@ -1,0 +1,20 @@
+{
+  "standard": "Token Metrology Standard",
+  "standard_version": "1.0",
+  "corpus": { "name": "TMS-Corpus", "version": "1.0" },
+  "tokenizer": {
+    "name": "example",
+    "type": "tiktoken",
+    "vocabulary_size": 200019
+  },
+  "measurements": [
+    {
+      "id": "en",
+      "language": "English",
+      "tokens": 33,
+      "bytes": 170,
+      "chars": 170
+    }
+  ],
+  "aggregates": {}
+}

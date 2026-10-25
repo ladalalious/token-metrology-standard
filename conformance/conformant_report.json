@@ -1,0 +1,40 @@
+{
+  "standard": "Token Metrology Standard",
+  "standard_version": "1.0",
+  "corpus": { "name": "TMS-Corpus", "version": "1.0" },
+  "tokenizer": {
+    "name": "example",
+    "type": "tiktoken",
+    "vocabulary_size": 200019,
+    "conditions": {
+      "normalization": "none (raw bytes)",
+      "special_tokens": "excluded",
+      "pre_tokenizer": "as defined by the encoding"
+    }
+  },
+  "measurements": [
+    {
+      "id": "en",
+      "language": "English",
+      "domain": "legal prose",
+      "tokens": 33,
+      "bytes": 170,
+      "chars": 170,
+      "token_per_byte": 0.1941,
+      "token_per_char": 0.1941
+    },
+    {
+      "id": "zh",
+      "language": "Chinese",
+      "domain": "legal prose",
+      "tokens": 37,
+      "bytes": 211,
+      "chars": 43,
+      "token_per_byte": 0.1754,
+      "token_per_char": 0.8605
+    }
+  ],
+  "aggregates": {
+    "token_inflation_factor": { "English": 1.0, "Chinese": 1.121 }
+  }
+}

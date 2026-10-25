@@ -29,8 +29,12 @@ token count to state its tokenizer identity and measurement conditions.
 | `benchmark_results.csv` | Raw benchmark data: 13 tokenizers × 18 corpus sections (234 rows), with token/byte/char counts and per-byte/per-char densities. |
 | `benchmark_summary.csv` | Per-section summary statistics (min/max/mean/std/CV across tokenizers). |
 | `benchmark_tax.csv` | Token inflation factor per language relative to English (parallel UDHR text). |
-| `tms_flores_sample_v1.json` | **Replication corpus** — 50 sentences × 20 languages from the FLORES-101 dev set (CC-BY-SA 4.0), used in the paper's multi-sentence robustness check. |
-| `flores_tax.json` | Token inflation factors on the FLORES-101 sample (mean / min / max over 13 tokenizers). |
+| `tms_flores_sample_v1.json` | Small FLORES-101 sample (50 sentences × 20 languages, CC-BY-SA 4.0). |
+| `flores_tax.json` | Token inflation on the 50-sentence sample (mean / min / max over 13 tokenizers). |
+| `flores_tax_v2.json` | **Main FLORES benchmark**: 300-sentence seeded sample (seed 42) × 30 languages, with 95% bootstrap CIs, length/tokenizer decomposition, and the sampled sentence IDs. |
+| `udhr_decomposition.json` | UDHR length/tokenizer decomposition (12 languages). |
+| `tms_report.schema.json` | JSON Schema for a TMS-conformant report. |
+| `conformance/` | One conformant and one deliberately non-conformant TMS report, for testing a validator. |
 | `LICENSE` | MIT (code). Corpus data terms are stated in `tms_corpus_v1.json`. |
 
 ## Quick start
