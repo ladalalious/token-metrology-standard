@@ -28,9 +28,9 @@
       "language": "Chinese",
       "domain": "legal prose",
       "tokens": 37,
-      "bytes": 211,
+      "bytes": 125,
       "chars": 43,
-      "token_per_byte": 0.1754,
+      "token_per_byte": 0.296,
       "token_per_char": 0.8605
     }
   ],

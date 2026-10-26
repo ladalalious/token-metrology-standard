@@ -38,7 +38,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["id", "language", "tokens", "bytes", "chars"],
+        "required": ["id", "language", "tokens", "bytes", "chars", "token_per_byte", "token_per_char"],
         "properties": {
           "id": { "type": "string" },
           "language": { "type": "string" },
@@ -51,6 +51,9 @@
         }
       }
     },
-    "aggregates": { "type": "object" }
+    "aggregates": {
+      "type": "object",
+      "required": ["token_inflation_factor"]
+    }
   }
 }

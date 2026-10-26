@@ -11,10 +11,15 @@
     {
       "id": "en",
       "language": "English",
+      "domain": "legal prose",
       "tokens": 33,
       "bytes": 170,
-      "chars": 170
+      "chars": 170,
+      "token_per_byte": 0.1941,
+      "token_per_char": 0.1941
     }
   ],
-  "aggregates": {}
+  "aggregates": {
+    "token_inflation_factor": { "English": 1.0 }
+  }
 }
